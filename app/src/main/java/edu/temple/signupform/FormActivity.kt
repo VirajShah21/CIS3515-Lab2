@@ -51,7 +51,11 @@ class FormActivity : AppCompatActivity() {
                 password.error = "Passwords do not match"
                 passwordConf.error = "Passwords do not match"
             } else {
-                Toast.makeText(getApplicationContext(), fullname.text, Toast.LENGTH_SHORT).show()
+                Toast.makeText(
+                    getApplicationContext(),
+                    "Hi " + fullname.text + "! Welcome to the app.",
+                    Toast.LENGTH_SHORT
+                ).show()
             }
         }
     }
